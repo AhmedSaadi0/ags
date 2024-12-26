@@ -33,7 +33,7 @@ sudo apt install node-typescript npm meson libgjs-dev gjs libgtk-layer-shell-dev
 
 ## Build
 ```bash
-git clone --recursive https://github.com/Aylur/ags.git
+git clone --recursive https://github.com/AhmedSaadi0/ags.git
 cd ags
 npm install
 meson setup build
