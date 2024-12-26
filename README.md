@@ -10,3 +10,32 @@ Currently, only Wayland is supported, but it also works on X11, [see #19](https:
 ## Get started
 
 To get started read the [wiki](https://aylur.github.io/ags-docs).
+
+
+# Install
+
+## Install Needed apps
+
+### Arch
+```bash
+sudo pacman -S typescript npm meson gjs gtk3 gtk-layer-shell gnome-bluetooth-3.0 upower networkmanager gobject-introspection libdbusmenu-gtk3 libsoup3
+````
+
+### Fedora
+```bash
+sudo dnf install typescript npm meson gjs-devel gtk3-devel gtk-layer-shell gnome-bluetooth upower NetworkManager pulseaudio-libs-devel libdbusmenu-gtk3 libsoup3
+```
+
+### Ubuntu
+```bash
+sudo apt install node-typescript npm meson libgjs-dev gjs libgtk-layer-shell-dev libgtk-3-dev libpulse-dev network-manager-dev libgnome-bluetooth-3.0-dev libdbusmenu-gtk3-dev libsoup-3.0-dev
+```
+
+## Build
+```bash
+git clone --recursive https://github.com/Aylur/ags.git
+cd ags
+npm install
+meson setup build
+meson install -C build
+```
